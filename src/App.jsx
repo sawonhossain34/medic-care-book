@@ -1,13 +1,12 @@
 
-import './App.css'
+// import './App.css'
+// import Layout from './layout/layout';
 
 
-const App = () => {
-  return (
-    <h1 className="text-3xl font-bold text-yellow-600 text-center underline">
-      Hello world!
-    </h1>
-  );
-};
+// const App = () => {
+//   return (
+//     <Layout></Layout>
+//   );
+// };
 
-export default App;
+// export default App;
