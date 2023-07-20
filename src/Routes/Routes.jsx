@@ -24,8 +24,9 @@
 // };
 
 // export default Routers;
-
+import "./Routes.css";
 import {
+    Navigate,
     createBrowserRouter,
 } from "react-router-dom";
 import Home from "../pages/Home";
@@ -35,7 +36,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import Contact from "../pages/Contact";
 import Services from "../pages/Services";
-import Layout from "../layout/layout";
+import Layout from "../Layout/Layout";
 
 export const Routes = createBrowserRouter([
     {
@@ -43,7 +44,8 @@ export const Routes = createBrowserRouter([
         element: <Layout></Layout>, 
         children: [
 
-            { path: "/", element: <Home></Home> },
+            { path: "/", element: <Navigate to="/home" replace /> },
+            { path: "/home", element: <Home></Home> },
             { path: "/doctors", element: <Doctors></Doctors> },
             { path: "/doctors/:id", element: <DoctorDetails></DoctorDetails> },
             { path: "/login", element: <Login></Login> },
